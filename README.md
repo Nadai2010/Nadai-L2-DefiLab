@@ -15,22 +15,23 @@
 
 ## Conceptos (5 min) 
 
+  Solemos tener muchos conceptos que al final hacen casi la misma función, así que debemos entender un poco cada un de ellos y sus siglas antes de seguir y entender que muchos proyectos usan estas palabras para crear fomo y caer en la trampa de no ser lo que dicen ser. (Ejemplo Shiba Layer2 forked de Matic/network oficial de github)
+  
+  ![Graph](/im%C3%A1genes/zkRollup.png)
+
   - Rollup: La esencia central de un Rollup son envolver transacciones por lotes para reducir los costes de envios que tiene la capa principal.
   - Optimistic Rollup: Es un tipo de Rollup que se ejecutan como capa 2 heredando la seguiridad y camino de ETH, esta se basa en un tipo de pruebas de fraude para demostrar que el estado es correcto, estas pruebas se basan en teoria de juegos y tienen un periodo de actuación, retiro a la cadena principal de 7 dias usando su puente nativo. 
   - Zk: Prueba de conocimiento cero es una forma de dar vericidad de un secreto sin revelar ninguna información confidencial. Podemos verlo con varios ejemplos (Cueva de alibaba, Caja fuerte y reloj...)
   - Zk-rollup, Zk Proof o Validity Proof (Stark y Snark): Estos hacen referencia a un Rollup que cumple con zk, estos básicamente son pruebas matemáticas supercomplejas que demuestran que el cálculo es el correcto, no teniendo que esperar ningún tiempo más hayá del de la creación de las prueba y envío de prover al secuenciador. Estas básicamente son dos SNARK y STARK, las que se ejecutan prácticamente en todos los zk Rollup. En Straknet se les da el nombre de Validity Proof a este tipo de soluciones haciendo muy parecida a zk Rollup en su definición, aquí tendriamos que entrar en mucho tecnisimo para diferenciarlos y muchos aprovechan ese juego de palabras.
 
-![Graph](/im%C3%A1genes/zkRollup.png), ![Graph](/im%C3%A1genes/Tabla.jpeg)
+![Graph](/im%C3%A1genes/Tabla.jpeg)
 
-  Solemos tener muchos conceptos que al final hacen casi la misma función, así que debemos entender un poco cada un de ellos y sus siglas antes de seguir y entender que muchos proyectos usan estas palabras para crear fomo y caer en la trampa de no ser lo que dicen ser. (Ejemplo Shiba Layer2 forked de Matic/network oficial de github)
 
-![Graph](/im%C3%A1genes/OptimismVszkRollup.jpg)
-  
-
+## Analogía (10 min)
 
 Aquí podemos empezar con la anología. 
 
-## Analogía (10 min)
+![Graph](/im%C3%A1genes/OptimismVszkRollup.jpg)
 
 Haremos una comparación entre Layer 1 de ETH (Carretera General), con su seguridad POS y Fundación (Sindicato Internacional de Carreteras) y cómo esta carretera general con sus normas, limitaciones, cogestiones de tráfico, busca soluciones para los conductores que puedan ir por otras carreteras secundarias (Layer 2) para llegar cada uno a sus dos principales ciudades Optimitrum y StarkSync (Optimism Rollup y zk Rollup o Validity Proof). Veremos como se crean estas carreteras heredando los materiales para la seguridad del primero y como cada ciudad monta sus peajes (Pruebas para volver a su Layer 1 o carretera general).
 
