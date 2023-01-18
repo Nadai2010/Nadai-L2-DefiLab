@@ -19,7 +19,7 @@
   
   ![Graph](/im%C3%A1genes/zkRollup.png)
 
-  - Rollup: La esencia central de un Rollup son envolver transacciones por lotes para reducir los costes de envios que tiene la capa principal.
+  - Rollup: La esencia central de un Rollup son envolver transacciones por lotes para reducir los costes y descongestionar los envíos que tiene la capa principal.
   - Optimistic Rollup: Es un tipo de Rollup que se ejecutan como capa 2 heredando la seguiridad y camino de ETH, esta se basa en un tipo de pruebas de fraude para demostrar que el estado es correcto, estas pruebas se basan en teoria de juegos y tienen un periodo de actuación, retiro a la cadena principal de 7 dias usando su puente nativo. 
   - Zk: Prueba de conocimiento cero es una forma de dar vericidad de un secreto sin revelar ninguna información confidencial. Podemos verlo con varios ejemplos (Cueva de alibaba, Caja fuerte y reloj...)
   - Zk-rollup, Zk Proof o Validity Proof (Stark y Snark): Estos hacen referencia a un Rollup que cumple con zk, estos básicamente son pruebas matemáticas supercomplejas que demuestran que el cálculo es el correcto, no teniendo que esperar ningún tiempo más hayá del de la creación de las prueba y envío de prover al secuenciador. Estas básicamente son dos SNARK y STARK, las que se ejecutan prácticamente en todos los zk Rollup. En Straknet se les da el nombre de Validity Proof a este tipo de soluciones haciendo muy parecida a zk Rollup en su definición, aquí tendriamos que entrar en mucho tecnisimo para diferenciarlos y muchos aprovechan ese juego de palabras.
