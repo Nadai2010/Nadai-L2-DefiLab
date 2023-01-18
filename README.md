@@ -1,6 +1,6 @@
 # Nadai Layer 2 DefiLab
 
-## Introducción a layer 2 (10 min)
+## Introducción a layer 2 (5 min)
 
 - Layer 1 seguridad POS de Eth: Esta blockchain se basa en pruebas de participación entre muchos nodos, siendo la red princpial de ETH. 
 - Problemas de ETH: Necesita descongestionar la red y seguir luchando por la seguridad y descentralización.
@@ -13,7 +13,7 @@
 
   Layer 1 sólo le importa que la salida y entrada coindidan en ambas Layer, esto significa que mientras a la red principal de ETH le demuestren por pruebas de fraude (Optimism Rollup) o por pruebas matemáticas (Snark/Stark), verficarán que el estado es el correcto.
 
-## Conceptos (5 min) 
+## Conceptos (5-10 min) 
 
   Solemos tener muchos conceptos que al final hacen casi la misma función, así que debemos entender un poco cada un de ellos y sus siglas antes de seguir y entender que muchos proyectos usan estas palabras para crear fomo y caer en la trampa de no ser lo que dicen ser. (Ejemplo Shiba Layer2 forked de Matic/network oficial de github)
   
