@@ -1,9 +1,9 @@
 # Nadai Layer 2 DefiLab
 
-## Introduccion a layer 2 (10 min)
+## Introducción a layer 2 (10 min)
 
 - Layer 1 seguridad POS de Eth: Esta blockchain se basa en pruebas de participación entre muchos nodos, siendo la red princpial de ETH. 
-- Problemas de ETH: Necesita descongrstionar la red y seguir luchando por la seguridad y descentralización.
+- Problemas de ETH: Necesita descongestionar la red y seguir luchando por la seguridad y descentralización.
 - Sidecheain: Esta blockchain tiene su propia forma de validar la cadena, con su propio conceso teniendo como principal inconveniente que no hereda la seguirdad de ETH.
 - Layer 2 hereda seguridad POS de eth: Esta blockchain puede configurarse de diferentes formas que iremos tratando, pero la principal ventaja frente a la sidechain son que heredan la seguirdad completa en la capa de ETH.
 
