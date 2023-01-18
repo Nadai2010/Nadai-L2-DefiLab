@@ -94,7 +94,7 @@ Y como cada carretera secundaria mantiene una visión y misión igual pero a su 
 
 Destacar que todas las soluciones de Layer 2 están por ahora centralizada y están en continuas actualizaciones por seres humanos que llevan los proyectos, algunos serán muy buenos y profesionales o no, pero siempre seguirá estando el factor humano por medio hasta que esten completamentes acabadas. Por ejemplo Starknet está en alpha 0.11 de testnet y en Cairo 1.0 de alpha en la mainet. (Esta se basará en un regéneis para comenzar todo en su mainet), en este paso la idea es tener descentralizado por completo prover (comprueba y ejecuta la prueba muy compleja) y secuenciador (añade la transacción con la prueba de prover en la capa principal). 
 
-Esta parte de centralización suele usarse como analogías con los Bridges, al final ellos también tendran Bridge, y como dijimos inicialmente a vista de ETH sólo son Smart Contract, por eso en Layer 2 como Starknet se están desarrollando grandes novedades sobre AA y como nuevas tecnologías pueden hacer pueden hacerse posible en una Layer 2 o 3 heredando la seguridfad de ETH y a un coste por recursividad aun menor en algunos casos.
+Esta parte de centralización suele usarse como analogías con los Bridges, al final ellos también tienen Bridge pero más sofisticados y con otras seguridades. Como dijimos inicialmente a vista de ETH sólo son Smart Contract, por eso en Layer 2 como Starknet se están desarrollando grandes novedades sobre AA y otras nuevas tecnologías que pueden hacerse posible en una Layer 2 o 3 heredando la seguridad de ETH y a un coste por recursividad de las pruebas aun menor en algunos casos que las L2.
 
 ![Graph](/im%C3%A1genes/L2Risk.png)
 
