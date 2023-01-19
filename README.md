@@ -3,26 +3,27 @@
 ## Introducción a layer 2 (5 min)
 
 - Layer 1 seguridad POS de Eth: Esta blockchain se basa en pruebas de participación entre muchos nodos, siendo la red princpial de ETH. 
-- Problemas de ETH: Necesita descongestionar la red y seguir luchando por la seguridad y descentralización.
+- Problemas de ETH Trilema: Necesita descongestionar la red y seguir luchando por la seguridad y descentralización.
 - Sidecheain: Esta blockchain tiene su propia forma de validar la cadena, con su propio conceso teniendo como principal inconveniente que no hereda la seguirdad de ETH.
 - Layer 2 hereda seguridad POS de eth: Esta blockchain puede configurarse de diferentes formas que iremos tratando, pero la principal ventaja frente a la sidechain son que heredan la seguirdad completa en la capa de ETH.
 
   ![Graph](/im%C3%A1genes/sidechain.png)
 
-  - Layer 2 son contratos inteligentes a simple vista de ETH, de ahí que en L2Beat marquen parámetros de actualizaciones y otros riesgos que evaluaremos al final.
+- Layer 2 son contratos inteligentes a simple vista de ETH, de ahí que en L2Beat marquen parámetros de actualizaciones y otros riesgos que evaluaremos al final.
 
-  Layer 1 sólo le importa que la salida y entrada coindidan en ambas Layer, esto significa que mientras a la red principal de ETH le demuestren por pruebas de fraude (Optimism Rollup) o por pruebas matemáticas (Snark/Stark), verficarán que el estado es el correcto.
+- Layer 1 sólo le importa que la salida y entrada coindidan en ambas Layer, esto significa que mientras a la red principal de ETH le demuestren por pruebas de fraude (Optimism Rollup) o por pruebas matemáticas (Snark/Stark), verficarán que el estado es el correcto.
 
 ## Conceptos (5-10 min) 
 
-  Solemos tener muchos conceptos que al final hacen casi la misma función, así que debemos entender un poco cada un de ellos y sus siglas antes de seguir y entender que muchos proyectos usan estas palabras para crear fomo y caer en la trampa de no ser lo que dicen ser. (Ejemplo Shiba Layer2 forked de Matic/network oficial de github)
+  Podemos tener muchos conceptos que al final hacen casi la misma función, así que debemos entender un poco cada un de ellos y sus siglas antes de seguir y entender que muchos proyectos usan estas palabras para crear fomo y caer en la trampa de no ser lo que dicen ser. [Ejemplo: Shiba Layer2 forked de Matic/network](https://github.com/shibaswaparmy/contracts)
   
   ![Graph](/im%C3%A1genes/zkRollup.png)
 
-  - Rollup: La esencia central de un Rollup son envolver transacciones por lotes para reducir los costes y descongestionar los envíos que tiene la capa principal.
-  - Optimistic Rollup: Es un tipo de Rollup que se ejecutan como capa 2 heredando la seguiridad y camino de ETH, esta se basa en un tipo de pruebas de fraude para demostrar que el estado es correcto, estas pruebas se basan en teoria de juegos y tienen un periodo de actuación, retiro a la cadena principal de 7 dias usando su puente nativo. 
+  - Rollup: La esencia central de un Rollup es envolver transacciones por lotes para reducir los costes y descongestionar los envíos que tiene la capa principal.
+  - Optimistic Rollup: Es un tipo de Rollup que se ejecutan como capa 2 heredando la seguiridad y camino de ETH, esta se basa en un tipo de pruebas de fraude para demostrar que el estado es correcto, estas pruebas se basan en teoría de juegos y tienen un periodo de actuación, retiro a la cadena principal de 7 dias usando su puente nativo. 
   - Zk: Prueba de conocimiento cero es una forma de dar vericidad de un secreto sin revelar ninguna información confidencial. Podemos verlo con varios ejemplos (Cueva de alibaba, Caja fuerte y reloj...)
-  - Zk-rollup, Zk Proof o Validity Proof (Stark y Snark): Estos hacen referencia a un Rollup que cumple con zk, estos básicamente son pruebas matemáticas supercomplejas que demuestran que el cálculo es el correcto, no teniendo que esperar ningún tiempo más hayá del de la creación de las prueba y envío de prover al secuenciador. Estas básicamente son dos SNARK y STARK, las que se ejecutan prácticamente en todos los zk Rollups. En Straknet se les da el nombre de Validity Proof a este tipo de soluciones pero es el método de verificación de transacciones que se lleva a cabo entre un prover, alguien que está creando una prueba para cierta información, y un verifier, que verifica la prueba sin compartir información entre ellos. Aquí tendriamos que entrar en mucho tecnisismo para diferenciarlos y muchos aprovechan esto para el juego de palabras.
+  - Zk-rollup o Validity Rollup: Estos hacen referencia a un Rollup que cumple con zk, estos básicamente añaden una pruebas de fraude o una prueba matemática supercompleja que demuestran que el cálculo es el correcto sin tener que revelar todos los datos y una parte de esos cálculos se realizan off-chain de la cadena principal descongestionandola.
+  - Fraud Proofs (Optimistic Rollup) o Validity Proof (Stark y Snark): Es el nombre que se les da a las pruebas de fraude para los Optimistic Rollup y que dejan pasar las transacciones, en ellas se basan en la teoría de juegos y que siempre va ha haber un `"Revisor de pruebas honesto"`, tendrán un periodo de 7 dias para retiros y los secuenciadores que hayan añadido los lotes si enviaron una prueba erronea, perderán su garantía no siendo muy rentable mientras haya un verificador honesto. Mientras que las pruebas presentadas como Validity Proof son matemáticamente comprobable, no teniendo que esperar ningún tiempo de retiro más hayá del de la creación de las prueba y envío de prover al secuenciador. Las que se ejecutan prácticamente en todos los Validity Rollup. En Starknet, creadores de STARK se les da el nombre de Validity Rollup a este tipo de soluciones haciendo muy parecida a zk Rollup en su definición. zkSync 2.0 usan SNARK pero se dicen ser un zk-Rollup que usan Validity Proof, aquí tendriamos que entrar en mucho tecnisismo para diferenciarlos, el porque tantos diversos nombres y como algunos se aprovechan de esos juegos de palabras. Estas básicamente son dos SNARK y STARK, 
 
 ![Graph](/im%C3%A1genes/Tabla.jpeg)
 
@@ -78,7 +79,7 @@ Y como cada carretera secundaria mantiene una visión y misión igual pero a su 
 
 ![Graph](/im%C3%A1genes/starkex.png)
 
-- StarkNet es una red de uso general en la que puede escribir e implementar sus propios contratos inteligentes, interactuar con otros contratos, etc., al igual que Ethereum. Es un Validity-Rollup descentralizado sin permiso (a menudo denominado ZK-Rollup). Opera como una red L2 sobre Ethereum, lo que permite que cualquier dApp alcance una escala ilimitada para su cálculo, sin comprometer la compatibilidad y la seguridad de Ethereum. Basadas en Starks
+- StarkNet es una red de uso general en la que puede escribir e implementar sus propios contratos inteligentes, interactuar con otros contratos, etc., al igual que Ethereum. Es un Validity Rollup descentralizado sin permiso (a menudo denominado ZK-Rollup). Opera como una red L2 sobre Ethereum, lo que permite que cualquier dApp alcance una escala ilimitada para su cálculo, sin comprometer la compatibilidad y la seguridad de Ethereum. Basadas en Starks
 
 ![Grap](/im%C3%A1genes/Layer3.png)
 
@@ -86,7 +87,7 @@ Y como cada carretera secundaria mantiene una visión y misión igual pero a su 
 
   **(Optimism Rollup y Arbitrum Rollup,)** Rollup Optimistic
   **(Dydyx y Loopring)** Zk Rollup
-  **(InmutableX)** Validium (Zk Rollup Data no se guarda en Layer 1)
+  **(InmutableX)** Validium (Zk Rollup Data no se guarda en Layer 1 la guarda DAC)
 
 
     
