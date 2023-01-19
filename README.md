@@ -91,7 +91,7 @@ Y como cada carretera secundaria mantiene una visión y misión igual pero a su 
 
 
     
-- Riesgo: Riesgos sobre TVL con el token de Gobernanza en las distintas Layer. Riesgos de centralización del prover o secuenciandor. Riesgos de actualización de contratos, tanto partes ventajosas como parte negativas de este tipo de Upgradabilidad. Periodo de Salida forzosa a veces no acorde con el Relay y la Upgradabilidad, haciendo que algunas partes seguras no lo sean tanto.
+- [Riesgo:](https://l2beat.com/scaling/risk) Riesgos sobre TVL con el token de Gobernanza en las distintas Layer. Riesgos de centralización del prover o secuenciandor. Riesgos de actualización de contratos, tanto partes ventajosas como parte negativas de este tipo de Upgradabilidad. Periodo de Salida forzosa a veces no acorde con el Relay y la Upgradabilidad, haciendo que algunas partes seguras no lo sean tanto.
 
 Destacar que todas las soluciones de Layer 2 están por ahora centralizada y están en continuas actualizaciones por seres humanos que llevan los proyectos, algunos serán muy buenos y profesionales o no, pero siempre seguirá estando el factor humano por medio hasta que esten completamentes acabadas. Por ejemplo Starknet está en alpha 0.11 de testnet y en Cairo 1.0 de alpha en la mainet. (Esta se basará en un regéneis para comenzar todo en su mainet), en este paso la idea es tener descentralizado por completo prover (comprueba y ejecuta la prueba muy compleja) y secuenciador (añade la transacción con la prueba de prover en la capa principal). 
 
