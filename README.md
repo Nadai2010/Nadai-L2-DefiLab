@@ -134,7 +134,7 @@ Destacar que todas las soluciones de Layer 2 están por ahora centralizadas y es
 
 Esta parte de centralización suele usarse como analogías con los Bridges, recordar que muchos de ellos montados en Sidechain agregando capas de riesgo, al final las Layer 2 también tienen sus Contratos con sus Bridge pero más sofisticados y con otras seguridades. Como dijimos inicialmente a vista de Ethereum las Layer 2 sólo son Smart Contracts, pero no todas las Layer 2 funcionan igual como hemos visto, sus códigos internos no tienen porque ser iguales y sus VM (Virtal Machine) también varian en su equivalencia y compatibilidad con la EVM (Ethereum Virtual Machine). 
 
-![Graph](/im%C3%A1genes/diferencias.jpg)
+![Graph](/im%C3%A1genes/diferencias.png)
 
 
 Algunos grandes avances en Layer 2 son Starknet y zkSync que están desarrollando grandes novedades sobre AA (Account Abstraction) y otras nuevas tecnologías con sus Pruebas de Validez (Stark/Snark) que pueden hacerse posible que una Layer 2 o Layer 3 mejore en privacidad, escalabilidad, herede la seguridad de Ethereum y una posible L3 a un coste por recursividad de las pruebas aún menor que en algunos casos de L2.
