@@ -120,8 +120,7 @@ Antes de entrar en cada Layer aclararemos como Starkware desarrolla StarkEx y su
 
   - StarkNet es una red de uso general en la que puede escribir e implementar sus propios contratos inteligentes, interactuar con otros contratos, etc., al igual que Ethereum. Es un Validity Rollup descentralizado sin permiso (a menudo denominado Zk-Rollup). Opera como una red L2 sobre Ethereum, lo que permite que cualquier dApp alcance una escala ilimitada para su cálculo, sin comprometer la compatibilidad y la seguridad de Ethereum. Basadas en STARKs
 
-  ![Grap](/im%C3%A1genes/Layer3.png)
-
+ 
 - L2 Beat: Nos centraremos en las dos soluciones principales y Validum.
 
   - **(Optimism Rollup y Arbitrum Rollup,)** Rollup Optimistic
@@ -137,6 +136,8 @@ Antes de entrar en cada Layer aclararemos como Starkware desarrolla StarkEx y su
 
   - Periodo de Salida forzosa a veces no acorde con el Relay y la Upgradabilidad, haciendo que algunas partes seguras no lo sean tanto.
 
+  ![Graph](/im%C3%A1genes/L2Risk.png)
+
 Destacar que todas las soluciones de Layer 2 están por ahora centralizadas y están en continuas actualizaciones por seres humanos que llevan los proyectos, algunos serán muy buenos y profesionales otros no, pero siempre seguirá estando el factor humano por medio hasta que esten completamente acabadas. Por ejemplo, Starknet está en alpha 0.11 de testnet y en Cairo 1.0 de alpha en la mainnet. (Esta se basará en un regéneis para comenzar todo en su mainnet con lazamietno final de Cairo 1.0), en este paso la idea es tener descentralizado por completo `prover` (comprueba y ejecuta la prueba muy compleja) y `secuenciador` (añade la transacción con la prueba de prover en la capa principal). 
 
 Esta parte de centralización suele usarse como analogías con los Bridges, recordar que muchos de ellos montados en Sidechain agregan capas de riesgo extra. Las Layer 2 también tienen sus Contratos con sus Bridge pero más sofisticados y con otras seguridades. Como dijimos inicialmente a vista de Ethereum las Layer 2 sólo son Smart Contracts, pero no todas las Layer 2 funcionan igual como hemos visto, también sus códigos internos no tienen porque ser iguales y sus VM (Virtal Machine) también varian en su equivalencia y compatibilidad con la EVM (Ethereum Virtual Machine). 
@@ -146,7 +147,8 @@ Esta parte de centralización suele usarse como analogías con los Bridges, reco
 
 Algunos grandes avances en Layer 2 son Starknet y zkSync que están desarrollando grandes novedades sobre AA (Account Abstraction) y otras nuevas tecnologías con sus Pruebas de Validez (Stark/Snark) que pueden hacerse posible que una Layer 2 o Layer 3 mejore en privacidad, escalabilidad, herede la seguridad de Ethereum y una posible L3 a un coste por recursividad de las pruebas aún menor que en algunos casos de L2.
 
-![Graph](/im%C3%A1genes/L2Risk.png)
+ ![Grap](/im%C3%A1genes/Layer3.png)
+
 
 ## Guerra de Layer 2 y L2Beat (5 min)
 
