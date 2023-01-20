@@ -159,10 +159,10 @@ Según VB podemos diferenciar en varios tipos de compatibilidades también su ma
 
 1. Tipo 1 (totalmente equivalente a Ethereum)
 Los ZK-EVM de tipo 1 se esfuerzan por ser total e inflexiblemente equivalentes a Ethereum. No cambian ninguna parte del sistema Ethereum para facilitar la generación de pruebas. Su principal ventaja es la compatibilidad, y los proyectos de este tipo son necesarios para "hacer Ethereum más escalable".
-
+```bash
     - Ventaja: compatibilidad perfecta
     - Desventaja: tiempo de prueba
-
+```
 Taiko  
 
 2. Tipo 2 (totalmente equivalente a EVM)
