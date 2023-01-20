@@ -8,7 +8,7 @@
 
 ![Trilemma](/im%C3%A1genes/trilema.png)
 
-### Los 2 tipos de solución de escalabilidad pricipales (5 min)
+### Los 2 tipos de solución de escalabilidad principales (5 min)
 
 - **Sidechain:** Esta red tiene su propia forma de validar la cadena, con su propio consenso, teniendo como principal inconveniente que no hereda la seguridad de Ethereum.
 
@@ -22,13 +22,13 @@
 - **Las Layer 2 son contratos inteligentes a simple vista de Ethereum:** Debemos pensar que la forma en la que Layer 1 interactúa con Layer 2 son por Smarts Contracts, podemos ver como en [L2Beat](https://l2beat.com) analizan parámetros de actualizaciones y otros riesgos que evaluaremos al final.
   
   
-  ![Graph](/im%C3%A1genes/smart.png)
+      ![Graph](/im%C3%A1genes/smart.png)
 
 - **Layer 1 sólo le importa el estado:** La salida y entrada deben coindir en ambas Layer, es decir, mientras que a la red principal de Ethereum le demuestren por pruebas de fraude (Optimismtic/Fraud Proof) o por pruebas de validez (Validity Proof, zk-Proof), les valdrá para verficar el estado correcto y añadirlo en la red principal o incorrecto y rechazarla.
   
-  ![Graph](/im%C3%A1genes/Estado.png)
+       ![Graph](/im%C3%A1genes/Estado.png)
 
-  ![Graph](/im%C3%A1genes/Pruebas.png)
+    ![Graph](/im%C3%A1genes/Pruebas.png)
 
 ---
 
@@ -40,13 +40,13 @@ Podemos tener definiciones de muchos conceptos que al final ejecutan casi la mis
 
 - **Rollup:** La esencia central de un Rollup es envolver transacciones por lotes para reducir los costes y descongestionar los envíos que tiene la capa principal. Podemos analógicamente verlo como los envios de varios _usuarios/protocolos_ de varias transacciones (mint NFT, swap, envios de ERC-20, en la foto inferior sería el papiro) en una sóla, como varios ciudadanos compartimos coche, el Autobus o Metro para ir al mismo destino juntos y descongestionar la red principal a la vez que abaratamos costes. 
 
-  ![Graph](/im%C3%A1genes/rollup.png)
+      ![Graph](/im%C3%A1genes/rollup.png)
 
 - **Zk:** Prueba de conocimiento cero es una forma de dar vericidad de un secreto sin revelar ninguna información confidencial. Podemos verlo con varios ejemplos (Cueva de alibaba, Caja fuerte y reloj...)
 
 - **Optimistic Rollup:** En un tipo de Layer 2 en que sus transacciones son del tipo de `Rollup `, heredando la seguiridad y Ethos (Valores, visión) de ETH. Estos Optimistic Rollup se basan en pruebas de fraude `Fraud Proof` para demostrarle a la Layer 1 de ETH que el estado es correcto, estas pruebas se basan en teoría de juegos y tienen un periodo de actuación para revisión, haciendo que retiro a la cadena principal pueda durar de 7 días usando su puente nativo.
 
-  ![Graph](/im%C3%A1genes/bridge.png)
+       ![Graph](/im%C3%A1genes/bridge.png)
 
 - **Fraud Proofs (Optimistic Rollup):** Es el nombre reciben las pruebas de estado de validación a la cadena principal, las pruebas serán del tipo fraude para los Optimistic Rollup, que dejarán pasar las transacciones, se basan en la teoría de juegos y que siempre habrá un `"Revisor honesto"` comprobando que el estado sea el correcto. Tendrán un periódo de 7 dias para retiros y los secuenciadores que hayan añadido los lotes si enviaron una prueba errónea, `"perderán su garantía"`, no siendo muy rentable mientras haya un `"Verificador honesto"`.
 
