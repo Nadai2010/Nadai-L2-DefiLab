@@ -160,8 +160,8 @@ Según VB podemos diferenciar en varios tipos de compatibilidades también su ma
 1. Tipo 1 (totalmente equivalente a Ethereum)
 Los ZK-EVM de tipo 1 se esfuerzan por ser total e inflexiblemente equivalentes a Ethereum. No cambian ninguna parte del sistema Ethereum para facilitar la generación de pruebas. Su principal ventaja es la compatibilidad, y los proyectos de este tipo son necesarios para "hacer Ethereum más escalable".
 ```bash
-    - Ventaja: compatibilidad perfecta
-    - Desventaja: tiempo de prueba
+- Ventaja: Compatibilidad perfecta
+- Desventaja: Tiempo de prueba
 ```
 Taiko  
 
@@ -170,8 +170,8 @@ Los ZK-EVM de tipo 2 se esfuerzan por ser exactamente equivalentes a EVM, pero n
 
 El objetivo es ser totalmente compatible con las aplicaciones existentes, pero realizar algunas modificaciones menores en Ethereum para facilitar el desarrollo y acelerar la generación de pruebas.
 
-    - Ventaja: equivalencia perfecta a nivel de VM
-    - Desventaja: tiempo de comprobación mejorado pero aún lento
+    - Ventaja: Equivalencia perfecta a nivel de VM
+    - Desventaja: Tiempo de comprobación mejorado pero aún lento
 
     > Tipo 2.5 (equivalente a EVM, excepto para los costos de gas)
 
@@ -180,13 +180,13 @@ Scroll, y según Polygon [zkEvm Polygon](https://polygon.technology/blog/polygon
 3. Tipo 3 (casi equivalente a EVM)
 Los ZK-EVM de tipo 3 son casi equivalentes a EVM, estos ZK hacen (unos pocos sacrificios) para mejorar los tiempos de comprobación y las posibilidades de desarrollo.
 
-    - Ventaja: más fácil de construir y tiempos de comprobación más rápidos
-    - Desventaja: más incompatibilidad
+    - Ventaja: Más fácil de construir y tiempos de comprobación más rápidos
+    - Desventaja: Más incompatibilidad
 
 zkEvm Polygon según Vitalik Buterin, aquí vemos la complejidad de poder evaluarlas.
 
-    - Ventaja: más fácil de construir y tiempos de fermentación más rápidos
-    - Desventaja: más incompatibilidad
+    - Ventaja: Más fácil de construir y tiempos de fermentación más rápidos
+    - Desventaja: Más incompatibilidad
 <br>
 4. Tipo 4 (equivalente a lenguaje de alto nivel)
 Un sistema Tipo 4 funciona al tomar el código fuente del contrato inteligente escrito en un lenguaje de alto nivel (por ejemplo , Solidity , Vyper o algún intermedio en el que ambos se compilen) y compilarlo en algún lenguaje que esté diseñado explícitamente para ser compatible con ZK-SNARK.
