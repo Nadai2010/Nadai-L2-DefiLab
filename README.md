@@ -20,14 +20,17 @@
 
 
 - **Las Layer 2 son contratos inteligentes a simple vista de Ethereum:** Debemos pensar que la forma en la que Layer 1 interactúa con Layer 2 son por Smarts Contracts, podemos ver como en [L2Beat](https://l2beat.com) analizan parámetros de actualizaciones y otros riesgos que evaluaremos al final.
+  
+  
+  ![Graph](/im%C3%A1genes/smart.png)
 
-![Graph](/im%C3%A1genes/smart.png)
+- **Layer 1 sólo le importa el estado:** La salida y entrada deben coindir en ambas Layer, es decir, mientras que a la red principal de Ethereum le demuestren por pruebas de fraude (Optimismtic/Fraud Proof) o por pruebas de validez (Validity Proof, zk-Proof), les valdrá para verficar el estado correcto y añadirlo en la red principal o incorrecto y rechazarla.
+  
+  ![Graph](/im%C3%A1genes/Estado.png)
 
-- **Layer 1 sólo le importa el estado:** La salida y entrada deben coindir en ambas Layer, es decir, mientras que a la red principal de Ethereum le demuestren por pruebas de fraude (Optimism Rollup) o por pruebas de validez (Validity Proof, zk-Proof), les valdrá para verficar el estado correcto y añadirlo en la red principal o incorrecto y rechazarla.
+  ![Graph](/im%C3%A1genes/Pruebas.png)
 
-![Graph](/im%C3%A1genes/Estado.png)
-
-![Graph](/im%C3%A1genes/Pruebas.png)
+---
 
 ## Conceptos (10 min) 
 
@@ -35,34 +38,34 @@ Podemos tener definiciones de muchos conceptos que al final ejecutan casi la mis
   
   ![Graph](/im%C3%A1genes/zkRollup.png)
 
-- **Rollup:** La esencia central de un Rollup es envolver transacciones por lotes para reducir los costes y descongestionar los envíos que tiene la capa principal. Podemos analógicamente verlo como los envios de varios usuarios/protocolos de varias transaciones (mint NFT, swap, envios de ERC-20) en una sóla, como varios ciudadanos tomamos el Autobus o Metro para ir al mismo destino juntos y descongestionar la red principal a la vez que abaratamos costes.
+- **Rollup:** La esencia central de un Rollup es envolver transacciones por lotes para reducir los costes y descongestionar los envíos que tiene la capa principal. Podemos analógicamente verlo como los envios de varios _usuarios/protocolos_ de varias transacciones (mint NFT, swap, envios de ERC-20, en la foto inferior sería el papiro) en una sóla, como varios ciudadanos tomamos el Autobus o Metro para ir al mismo destino juntos y descongestionar la red principal a la vez que abaratamos costes. 
 
-![Graph](/im%C3%A1genes/rollup.png)
+  ![Graph](/im%C3%A1genes/rollup.png)
 
 - **Zk:** Prueba de conocimiento cero es una forma de dar vericidad de un secreto sin revelar ninguna información confidencial. Podemos verlo con varios ejemplos (Cueva de alibaba, Caja fuerte y reloj...)
 
-- **Optimistic Rollup:** En un tipo de Layer 2 en que sus transacciones son del tipo de `Rollup `, heredando la seguiridad y Ethos (Valores, visión) de ETH. Estos Optimistic Roolup se basan en pruebas de fraude `Fraud Proof` para demostrarle a la Layer 1 de ETH que el estado es correcto, estas pruebas se basan en teoría de juegos y tienen un periodo de actuación para revisión, haciendo que retiro a la cadena principal pueda durar de 7 días usando su puente nativo.
+- **Optimistic Rollup:** En un tipo de Layer 2 en que sus transacciones son del tipo de `Rollup `, heredando la seguiridad y Ethos (Valores, visión) de ETH. Estos Optimistic Rollup se basan en pruebas de fraude `Fraud Proof` para demostrarle a la Layer 1 de ETH que el estado es correcto, estas pruebas se basan en teoría de juegos y tienen un periodo de actuación para revisión, haciendo que retiro a la cadena principal pueda durar de 7 días usando su puente nativo.
 
-![Graph](/im%C3%A1genes/bridge.png)
+  ![Graph](/im%C3%A1genes/bridge.png)
 
 - **Fraud Proofs (Optimistic Rollup):** Es el nombre reciben las pruebas de estado de validación a la cadena principal, las pruebas serán del tipo fraude para los Optimistic Rollup, que dejarán pasar las transacciones, se basan en la teoría de juegos y que siempre habrá un `"Revisor honesto"` comprobando que el estado sea el correcto. Tendrán un periódo de 7 dias para retiros y los secuenciadores que hayan añadido los lotes si enviaron una prueba errónea, `"perderán su garantía"`, no siendo muy rentable mientras haya un `"Verificador honesto"`.
 
-![Graph](/im%C3%A1genes/optimistic.png)
+  ![Graph](/im%C3%A1genes/optimistic.png)
 
 - **Zk-Rollup o Validity Rollup:** Hacen referencia a unos tipos de Layer 2 que usan Rollup (Lotes de transacciones), que cumplen con zk (Conocimiento Cero), estos añaden una pruebas pruebas matemáticas supercomplejas que demuestran que el cálculo es el correcto sin tener que revelar todos los datos. Una parte de esos cálculos se realizan off-chain de la cadena principal no sobrecargándola. La definición de Validity Rollup salió de Starknet y sus Validity Proof (Pruebas de validez), que se diferencian en su cálculos de pruebas matemáticas las STARK frente las SNARK.
 - **Zk-Proof o Validity Proof (Snark y Stark):** Las pruebas presentadas como Zk-Proof o Validity Proof son matemáticamente realizadas y comprobables, no teniendo que esperar ningún tiempo de retiro como las Pruebas de Fraude (Fraud Proofs), más allá del de la creación de las pruebas y envíos de estas pruebas. Todos los Validity Rollup y Zk-Rollup usan este tipo de pruebas para actualizar el estado correcto de la cadena principal. 
-* En Starknet, creadores de STARK se les da el nombre de Validity Rollup a este tipo de soluciones haciendo muy parecida a Zk-Rollup en su definición. Usadno Validity Proof
-* zkSync 2.0 son un Zk-Rollup que usan también estas pruebas matemáticas pero denominadas Zk-Proof,  sus pruebas se basan en SNARK, las diferencias entre ambas dependerá de mucho tecnisismo para diferenciarlos, pero la principal es que las STARK son algoritmos resistentes a un posible ataque cuántico.
+  * En Starknet, creadores de STARK se les da el nombre de Validity Rollup a este tipo de soluciones haciendo muy parecida a Zk-Rollup en su definición. Usando `Validity Proof`
+  * zkSync 2.0 son un Zk-Rollup que usan también estas pruebas matemáticas pero denominadas `Zk-Proof`,  sus pruebas se basan en SNARK, las diferencias entre ambas dependerá de mucho tecnisismo para diferenciarlos, pero la principal es que las STARK son algoritmos resistentes a un posible ataque cuántico.
 
-![Graph](/im%C3%A1genes/zk.png)
+  ![Graph](/im%C3%A1genes/zk.png)
 
-Con estos conceptos vemos como diferenciarlos, como crean tanta confusión por sus similitudes, el porque de tantos diversos nombres y como algunos malos actores se podrían aprovechar de esos juegos de palabras. 
+Con estos conceptos vemos como diferenciarlos, como crean tanta confusión por sus similitudes, el porque de tantos diversos nombres y como algunos malos actores se podrían aprovechar de esos juegos de palabras. Ahora veremos una pequeña comparación en una tabla de sus transacciones por segundo, tiempo de retiro...
 
-![Graph](/im%C3%A1genes/Tabla.jpeg)
+  ![Graph](/im%C3%A1genes/Tabla.jpeg)
 
 ## Analogía (10 min)
 
-En ella haremos una comparación entre Layer 1 de Ethereum (Carretera General), con su seguridad PoS y Fundación (Sindicato Internacional de Carreteras) y cómo esta carretera general con sus normas, limitaciones, cogestiones de tráfico, busca soluciones para los conductores que puedan ir por otras carreteras secundarias (Layer 2) para llegar cada uno, a sus dos principales ciudades OptimisTrum y StarkSync (Optimism Rollup y Zk-Rollup o Validity Rollup). Veremos como se crean estas carreteras heredando los materiales para la seguridad del primero y como cada ciudad monta sus carreteras secundarias, peajes, con distintas tecnologías y pensamientos (Pruebas de Fraude o Pruebas de Validez) para volver a Layer 1 o carretera general).
+En ella haremos una comparación entre Layer 1 de Ethereum (Carretera General), con su seguridad PoS y Fundación (Sindicato Internacional de Carreteras) y cómo esta carretera general tiene sus normas, limitaciones, cogestiones de tráfico, pero busca soluciones para que los conductores puedan ir por  carreteras secundarias (Layer 2) para llevar a cada habitante a sus dos principales ciudades `OptimisTrum y StarkSync` (Optimism Rollup y Zk-Rollup o Validity Rollup). Veremos como se crean estas carreteras heredando los materiales para la seguridad del primero y como cada ciudad monta sus carreteras secundarias, peajes, con distintas tecnologías y pensamientos (Pruebas de Fraude o Pruebas de Validez) para volver a Layer 1 o Carretera General.
 
 ![Graph](/im%C3%A1genes/OptimismVszkRollup.jpg)
 
@@ -70,7 +73,7 @@ En ella haremos una comparación entre Layer 1 de Ethereum (Carretera General), 
 
 * **Características:** Normas generales para todas las vías o `"Espacios"` que esten dentro de su juridicción o consenso.
 * **Seguridad:** La seguridad máxima de todos los `Sindicatos de Carreteras Internacionales` (PoS).
-* **Escalabilidad:** Su coste y transacciones por esta vía suelen ser elevadas, cumplen requisitos estandar (ETH) del Sindicato de Carreteras Internacionales y necesita un periodo para la votación de cambios, acepetación y ejecución para poder construir mejores carreteras sin congestionar todas las vias y colapsando a los conductores. (Ethereum y su roadmap)
+* **Escalabilidad:** Su coste y transacciones por esta vía suelen ser elevadas, cumplen requisitos estandar (ETH) del Sindicato de Carreteras Internacionales y necesita un periodo para la votación de cambios, aceptación y ejecución para poder construir mejores carreteras sin congestionar todas las vias y colapsando a los conductores. (Ethereum y su roadmap)
 * **Descentralización:** Aquí dependerá de como este organizado ese `Sindicatos de Carreteras Internacionales` y si son de verdad lo que quieren el pueblo y necesitan los conductores, adaptándose y teniéndoles en cuenta o simplemente hacen de organismo central y censura organizando las carreteras como les da la gana. En este caso son un buen organismo central que dejan que cada ciudad (Layer 2), proponga y cree unas carreteras secundarias, heredando la seguridad de la Carretera General (POS) dado que el Sindicato usará el mismo material y obreros con la que han fabricado la Carretera General, todo para no tener errores de Seguridad de `Empresas Pequeñas`.
 
 Las empresas pequeñas crearán según sus necesidades, principios e ideas soluciones para poder ir a 2 ciudades. Algunas teniendo en cuenta más a sus ciudadanos con encuestas y otras no tanto, pero todas estas carreteras deberán cumplir con la norma de la Carretera General, que es muy simple. 
@@ -109,32 +112,36 @@ Y como cada carretera secundaria mantiene una visión y misión igual pero a su 
 
 - Principales Layer 2 [L2 Beat](https://l2beat.com/). 
 
-Antes de entrar en cada Layer deberiamos aclarar como Starkware desarrolla StarkEx y es diferente a Starknet, este se implementa como disintos tipos de soluciones para intercambios sobre la LAYER 1
+Antes de entrar en cada Layer aclararemos como Starkware desarrolla StarkEx y sus diferencias a Starknet.
 
-- StarkEx es un SaaS de capa 2 independiente y personalizable para intercambios que utiliza el sistema de prueba STARK para proporcionar una escalabilidad masiva. 
+  - StarkEx es un SaaS de capa 2 independiente y personalizable para intercambios que utiliza el sistema de prueba STARK para proporcionar una escalabilidad masiva. 
 
-![Graph](/im%C3%A1genes/starkex.png)
+  ![Graph](/im%C3%A1genes/starkex.png)
 
-- StarkNet es una red de uso general en la que puede escribir e implementar sus propios contratos inteligentes, interactuar con otros contratos, etc., al igual que Ethereum. Es un Validity Rollup descentralizado sin permiso (a menudo denominado Zk-Rollup). Opera como una red L2 sobre Ethereum, lo que permite que cualquier dApp alcance una escala ilimitada para su cálculo, sin comprometer la compatibilidad y la seguridad de Ethereum. Basadas en STARKs
+  - StarkNet es una red de uso general en la que puede escribir e implementar sus propios contratos inteligentes, interactuar con otros contratos, etc., al igual que Ethereum. Es un Validity Rollup descentralizado sin permiso (a menudo denominado Zk-Rollup). Opera como una red L2 sobre Ethereum, lo que permite que cualquier dApp alcance una escala ilimitada para su cálculo, sin comprometer la compatibilidad y la seguridad de Ethereum. Basadas en STARKs
 
-![Grap](/im%C3%A1genes/Layer3.png)
+  ![Grap](/im%C3%A1genes/Layer3.png)
 
-- L2 Beat: Noc centraremos en las dos soluciones principales y Validum.
+- L2 Beat: Nos centraremos en las dos soluciones principales y Validum.
 
   - **(Optimism Rollup y Arbitrum Rollup,)** Rollup Optimistic
   - **(Dydyx y Loopring)** Zk-Rollup
   - **(InmutableX)** Validium (Zk-Rollup. Data no se guarda en Layer 1 la guarda DAC)
     
-- [Riesgo:](https://l2beat.com/scaling/risk) Riesgos sobre TVL con el token de Gobernanza en las distintas Layer. Riesgos de centralización del prover o secuenciandor. Riesgos de actualización de contratos, tanto partes ventajosas como parte negativas de este tipo de Upgradabilidad. 
- Ventajas: Ante cualquier vulnerabilidad o xploit detectado `rápida` reacción. Con `Relay 14 días` no puedes actuar sino avisar.
- Desventaja: Ante cualquier vulnerabilidad, xploit no detectado o mala actualización `mala` reacción al no tener `Relay de tiempo` para avisar a los usuarios y tener márgen para actuar.
- Periodo de Salida forzosa a veces no acorde con el Relay y la Upgradabilidad, haciendo que algunas partes seguras no lo sean tanto.
+- [Riesgos:](https://l2beat.com/scaling/risk) 
+  - Riesgos sobre TVL con el token de Gobernanza en las distintas Layer. 
+  - Riesgos de centralización del prover o secuenciandor. 
+  - Riesgos de actualización de contratos, tanto partes ventajosas como parte negativas de este tipo de Upgradabilidad. 
+    1. Ventajas: Ante cualquier vulnerabilidad o X-ploit detectado pueden tener una `rápida` reacción. Con `Relay 14 días` no puedes actuar sino avisar.
+    2. Desventaja: Ante cualquier vulnerabilidad, X-ploit no detectado o mala actualización tendrán una `mala` reacción al no tener `Relay de tiempo` para avisar a los usuarios y tener márgen para actuar.
 
-Destacar que todas las soluciones de Layer 2 están por ahora centralizadas y están en continuas actualizaciones por seres humanos que llevan los proyectos, algunos serán muy buenos y profesionales o no, pero siempre seguirá estando el factor humano por medio hasta que esten completamentes acabadas. Por ejemplo, Starknet está en alpha 0.11 de testnet y en Cairo 1.0 de alpha en la mainnet. (Esta se basará en un regéneis para comenzar todo en su mainnet con lazamietno final de Cairo 1.0), en este paso la idea es tener descentralizado por completo prover (comprueba y ejecuta la prueba muy compleja) y secuenciador (añade la transacción con la prueba de prover en la capa principal). 
+  - Periodo de Salida forzosa a veces no acorde con el Relay y la Upgradabilidad, haciendo que algunas partes seguras no lo sean tanto.
 
-Esta parte de centralización suele usarse como analogías con los Bridges, recordar que muchos de ellos montados en Sidechain agregando capas de riesgo, al final las Layer 2 también tienen sus Contratos con sus Bridge pero más sofisticados y con otras seguridades. Como dijimos inicialmente a vista de Ethereum las Layer 2 sólo son Smart Contracts, pero no todas las Layer 2 funcionan igual como hemos visto, sus códigos internos no tienen porque ser iguales y sus VM (Virtal Machine) también varian en su equivalencia y compatibilidad con la EVM (Ethereum Virtual Machine). 
+Destacar que todas las soluciones de Layer 2 están por ahora centralizadas y están en continuas actualizaciones por seres humanos que llevan los proyectos, algunos serán muy buenos y profesionales otros no, pero siempre seguirá estando el factor humano por medio hasta que esten completamente acabadas. Por ejemplo, Starknet está en alpha 0.11 de testnet y en Cairo 1.0 de alpha en la mainnet. (Esta se basará en un regéneis para comenzar todo en su mainnet con lazamietno final de Cairo 1.0), en este paso la idea es tener descentralizado por completo `prover` (comprueba y ejecuta la prueba muy compleja) y `secuenciador` (añade la transacción con la prueba de prover en la capa principal). 
 
-![Graph](/im%C3%A1genes/diferencias.png)
+Esta parte de centralización suele usarse como analogías con los Bridges, recordar que muchos de ellos montados en Sidechain agregan capas de riesgo extra. Las Layer 2 también tienen sus Contratos con sus Bridge pero más sofisticados y con otras seguridades. Como dijimos inicialmente a vista de Ethereum las Layer 2 sólo son Smart Contracts, pero no todas las Layer 2 funcionan igual como hemos visto, también sus códigos internos no tienen porque ser iguales y sus VM (Virtal Machine) también varian en su equivalencia y compatibilidad con la EVM (Ethereum Virtual Machine). 
+
+  ![Graph](/im%C3%A1genes/diferencias.png)
 
 
 Algunos grandes avances en Layer 2 son Starknet y zkSync que están desarrollando grandes novedades sobre AA (Account Abstraction) y otras nuevas tecnologías con sus Pruebas de Validez (Stark/Snark) que pueden hacerse posible que una Layer 2 o Layer 3 mejore en privacidad, escalabilidad, herede la seguridad de Ethereum y una posible L3 a un coste por recursividad de las pruebas aún menor que en algunos casos de L2.
