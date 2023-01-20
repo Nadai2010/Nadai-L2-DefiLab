@@ -154,6 +154,9 @@ Los ZK-EVM de tipo 3 son casi equivalentes a EVM, estos ZK hacen (unos pocos sac
 
 zkEvm Polygon según Vitalik Buterin, aquí vemos la complejidad de poder evaluarlas.
 
+    - Ventaja: más fácil de construir y tiempos de fermentación más rápidos
+    - Desventaja: más incompatibilidad
+<br>
 4. Tipo 4 (equivalente a lenguaje de alto nivel)
 Un sistema Tipo 4 funciona al tomar el código fuente del contrato inteligente escrito en un lenguaje de alto nivel (por ejemplo , Solidity , Vyper o algún intermedio en el que ambos se compilen) y compilarlo en algún lenguaje que esté diseñado explícitamente para ser compatible con ZK-SNARK.
 
