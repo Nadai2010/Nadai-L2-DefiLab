@@ -5,7 +5,9 @@
 - La seguridad de la L1 o _Layer 1_ de Ethereum es PoS: El consenso de esta red blockchain se basa en pruebas de participación entre muchos nodos, siendo la red princpial de Ethereum.
 <br>
 - El problema de las redes blockchain, el trilema: Necesita descongestionar la red y seguir luchando por la seguridad y descentralización.
+
 ![Trilemma](./im%C3%A1genes/trilema.png)
+
 <br>
 
 ### Los 2 tipos de solución de escalabilidad pricipales
