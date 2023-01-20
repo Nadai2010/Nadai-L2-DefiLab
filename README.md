@@ -163,7 +163,7 @@ Los ZK-EVM de tipo 1 se esfuerzan por ser total e inflexiblemente equivalentes a
 - Ventaja: Compatibilidad perfecta
 - Desventaja: Tiempo de prueba
 ```
-Taiko  
+Un ejemplo puede ser Taiko  
 
 2. Tipo 2 (totalmente equivalente a EVM)
 Los ZK-EVM de tipo 2 se esfuerzan por ser exactamente equivalentes a EVM, pero no del todo equivalentes a Ethereum. Es decir que, si bien no es totalmente compatible con Ethereum, sí lo es con los contratos inteligentes creados en esta red.  
@@ -175,7 +175,7 @@ El objetivo es ser totalmente compatible con las aplicaciones existentes, pero r
 
     > Tipo 2.5 (equivalente a EVM, excepto para los costos de gas)
 
-Scroll, y según Polygon [zkEvm Polygon](https://polygon.technology/blog/polygon-zkevm-within-vitaliks-framework-gaining-clarity-and-looking-ahead)
+Unos ejemplos pueden ser Scroll y según Polygon [zkEvm Polygon](https://polygon.technology/blog/polygon-zkevm-within-vitaliks-framework-gaining-clarity-and-looking-ahead)
 
 3. Tipo 3 (casi equivalente a EVM)
 Los ZK-EVM de tipo 3 son casi equivalentes a EVM, estos ZK hacen (unos pocos sacrificios) para mejorar los tiempos de comprobación y las posibilidades de desarrollo.
@@ -183,7 +183,7 @@ Los ZK-EVM de tipo 3 son casi equivalentes a EVM, estos ZK hacen (unos pocos sac
     - Ventaja: Más fácil de construir y tiempos de comprobación más rápidos
     - Desventaja: Más incompatibilidad
 
-zkEvm Polygon según Vitalik Buterin, aquí vemos la complejidad de poder evaluarlas.
+Un ejemplo puede ser zkEvm Polygon según Vitalik Buterin, aquí vemos la complejidad de poder evaluarlas.
 
     - Ventaja: Más fácil de construir y tiempos de fermentación más rápidos
     - Desventaja: Más incompatibilidad
@@ -194,7 +194,7 @@ Un sistema Tipo 4 funciona al tomar el código fuente del contrato inteligente e
     - Ventaja: tiempos de comprobación muy rápidos
     - Desventaja: más incompatibilidad
 
-Starknet - zkSync
+Unos ejemplos pueden ser Starknet - zkSync
 
 Por este tipo de variaciones cada una tiene su propia guerra, algunas con comunidades más fuertes, otros con ingenieros matemáticos muy buenos pero con un marketing no tan adecuado...Desde mi opinión tanto Optimism, algunas otra como zkSync 2.0, Scroll, zkEVM Polygon pueden estar muy bien, también creo que Starknet se está preparando a pruebas de bombas con todo lo incoporado en otras soluciones además de mejoras como Stark principalmente como algoritmo de cifrado resistente anti ataques de computación cuántica.
 
