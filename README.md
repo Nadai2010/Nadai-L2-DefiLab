@@ -38,7 +38,7 @@ Podemos tener definiciones de muchos conceptos que al final ejecutan casi la mis
   
   ![Graph](/im%C3%A1genes/zkRollup.png)
 
-- **Rollup:** La esencia central de un Rollup es envolver transacciones por lotes para reducir los costes y descongestionar los envíos que tiene la capa principal. Podemos analógicamente verlo como los envios de varios _usuarios/protocolos_ de varias transacciones (mint NFT, swap, envios de ERC-20, en la foto inferior sería el papiro) en una sóla, como varios ciudadanos tomamos el Autobus o Metro para ir al mismo destino juntos y descongestionar la red principal a la vez que abaratamos costes. 
+- **Rollup:** La esencia central de un Rollup es envolver transacciones por lotes para reducir los costes y descongestionar los envíos que tiene la capa principal. Podemos analógicamente verlo como los envios de varios _usuarios/protocolos_ de varias transacciones (mint NFT, swap, envios de ERC-20, en la foto inferior sería el papiro) en una sóla, como varios ciudadanos compartimos coche, el Autobus o Metro para ir al mismo destino juntos y descongestionar la red principal a la vez que abaratamos costes. 
 
   ![Graph](/im%C3%A1genes/rollup.png)
 
@@ -88,17 +88,18 @@ Desde la Carretera General hacia OptimisTrum se crearán unas carreteras secunda
 
 En el Control de Peaje sólo deberás verficar que el coche es tuyo, que eres tú el que lo conduce, tú matrícula, marca, modelo, seguro..., una fotocopia cuñada te valdrá. Al salir de nuevo en el peaje ellos verifcarán por encima esta fotocopia con estos datos, pero de una forma sencilla, también sonreriarás a la cámara/vigilante para la foto y te dirá **`(Ah si, creo que eres tú)`** (Pruebas de Fraude o Fraud Proof) y te dejará pasar, `que buena fé`.
 
-Aunque puede ser que a los 7 días en tu registro de OptimisTrum City a través de los verificadores de la Carretera General y vean que no has sido de verdad el conductor principal y no has cumplido las normas, te llega la sanción correspondiente a ti o al que te haya dejado pasar, normalmente al que haya dejado la fianza y este comprobando como organismo de Carretera General su seguridad en el peaje, en este caso aquellos hombres que trabajan para el peaje y dan permiso o no a pasar las transacciones de los lotes de vehiculos serán los culpables de esta situación. El **"Ah si, creo que eres tú"** tiene un periodo de 7 dias antes de que pase nada, como vas todos los dias al trabajo se fian un poco más de lo normal, pero también algunos podrán perder su trabajo o sus sanciones corresponientes en caso de que no haya sido así.
+Aunque puede ser que a los 7 días en tu registro de OptimisTrum City a través de los verificadores de la Carretera General y vean que no has sido de verdad el conductor principal y no has cumplido las normas, te llega la sanción correspondiente a ti o al que te haya dejado pasar, normalmente al que haya dejado la fianza y este comprobando como organismo de Carretera General su seguridad en el peaje, en este caso aquellos hombres que trabajan para el peaje y dan permiso o no a pasar las transacciones de los lotes de vehiculos serán los culpables de esta situación. El **"Ah si, creo que eres tú"** tiene un periodo de 7 dias antes de que pase nada, como vas todos los dias al trabajo se fian un poco más de lo normal, pero también algunos podrán perder su trabajo o tener sanciones corresponientes en el caso de que no haya sido así.
 
-### StarkSync City y carreteras.
+### StarkSync City y Carreteras.
 
 Desde la Carretera General hacia StarkSync se crearán unas carreteras secundarias, todas hacia una central de peajes, más baratos y directo en el que todos irán a StarkSync City. Esta descongestionará mucho la Carretera General. Esta ciudad tendrá la misma visión general que OptimisTrum City, descongestionar la principal y que sus conductores puedan llegar a su ciudad de una forma más rápida y económica, pero sin perder la seguridad de sus carretera. 
 
-Tienen una visión un poco más sofisticada pero respetando cumplir con la norma **"Deben coincidir el mismo número de entradas y salidas de coches. Fin"**. Así que pensaron ¿por qué no puedo dejar el coche en el peaje e irme en Autobus?. Las llaves biométricas (Validity Proof) pueden ser una prueba de que ese coche es el mío y sólo yo puedo arrancarlo (Zk), ya que para que el coche camine necesita esta validación matemática entre la llave, coche y usuario. 
+Tienen una visión un poco más sofisticada pero respetando cumplir con la norma **"Deben coincidir el mismo número de entradas y salidas de coches. Fin"**. Así que pensaron ¿por qué no puedo dejar el coche en el peaje e irme en Autobus?. Las llaves biométricas (Validity Proof) pueden ser una prueba de que ese coche es el mío y sólo yo puedo arrancarlo (Zk), ya que para que el coche camine necesita esta validación matemática entre la llave, coche y usuario. `Tampoco podrán robartelo.`
 
-La llave biométrica deberá guardarla bien, podrá circular con su coche hacia la ciudad en lotes humanos o de vehículos, también podrá viajar en Autobús, Tren o cualquier otro medio construido en el "Territorio" hacia StarkSync. Los trenes te pedirán una confirmación de que tienes permiso para ir a StarkSync, la llave y un lector será suficiente para saber que biométricamente es sólo la tuya y estas cumpliendo las normas. **(la ciudad es muy grande está Snark parte Alta y Stark parte baja...)** así que cada Tren o Autobus pueden usar un lector prueba distinta (Stark/Snark) pero todos verificarán matemáticamente lo mismo.
+La llave biométrica deberá guardarla bien, podrá circular con su coche hacia la ciudad en lotes humanos o de vehículos, también podrá viajar en Autobús, Tren o cualquier otro medio construido en el "Territorio" hacia StarkSync. Los trenes te pedirán una confirmación de que tienes permiso para ir a StarkSync, la llave y un lector será suficiente para saber que biométricamente es sólo la tuya y estas cumpliendo las normas. **(la ciudad es muy grande está Snark parte Alta y Stark parte baja...)** así que cada Tren o Autobus pueden usar un lector o prueba distinta (Stark/Snark), pero todos verificarán matemáticamente lo mismo. `Eres tú.`
 
-En el regreso a la Carretera General deberán volver por la central de peajes, pero estos informamos que son algo más sofisticado y no tendrá a ninguna cámara o empleado honesta verificando que eres tú el del coche. Funciona por cámaras y sensores que directamente sabe que es tú llave biométrica y tú coche, así que al menos que haya otra llave igual o otro conductor igual no creo que puedas evitar pasar el peaje **NO LO CREO**. También pueden cambiar otros datos y saber que cumples las normas (circular sin la matrícula, ir disfrazado o que tu vehiculo ahora luzca de otro color) no será motivo ni de revisión y automáticamente te deberían dejar pasar a la Carretera General. En un caso que tuvieras el Seguro vencido, no cumplirias con las normas de los `Sindicatos de Carreteras Internacionales` y tu prueba seguramente sea erróna, no te sorprendas si no te arranca el vehículo.
+En el regreso a la Carretera General deberán volver por la central de peajes, pero estos son algo más sofisticado y no tendrá a ninguna cámara o empleado honesta verificando que eres tú el del coche como OptimisTrum. Funcionan por cámaras y sensores que directamente sabe que es tú llave biométrica y tú coche, así que al menos que haya otra llave igual o otro conductor igual no creo que puedas evitar pasar el peaje **NO LO CREO**. 
+  - También pueden cambiar otros datos y saber que cumples las normas _(circular sin la matrícula, ir disfrazado o que tu vehiculo ahora luzca de otro color)_ no será motivo ni de revisión y automáticamente te deberían dejar pasar a la Carretera General. En un caso que tuvieras el Seguro vencido, no cumplirias con las normas de los `Sindicatos de Carreteras Internacionales` y tu prueba seguramente sea erróna. `No te sorprendas si no te arranca el vehículo.`
 
 ### Problemas en Peajes
 
@@ -106,7 +107,7 @@ Si todo va bien desde ambas ciudades podrá salir y entrar sin ningún problema,
 
 Y como cada carretera secundaria mantiene una visión y misión igual pero a su vez distinta, estas ciudades y empresas pequeñas tendrán mucho poder, ya que la gente puede decide donde vivir. 
 
-**Si te dejan salir, si.**
+**`Si te dejan salir, si.`**
 
 ## L2 Beat, RISK and FEE (10)
 
